@@ -1,5 +1,5 @@
 var fs = require('fs');
-var htmlfile = "test.html";
+var htmlfile = "index.html";
 var express = require("express");
 var app = express();
 
