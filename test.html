@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Unpinned</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto|Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+      /* Large desktop */ 
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px;
+      }
+        .linediv-l {
+          border-bottom: 1px white solid;
+      }
+        .linediv-r {
+          border-top: 1px white solid;
+      }
+     } 
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) {
+        .copy {
+          padding: 2.5% 10%;
+      }
+        .linediv-l {
+           border-bottom: 1px white solid;
+      }
+        .linediv-r {
+           border-top: 1px white solid;
+      }
+     }
+
+      .navbar-inner, .navbar .btn-navbar {
+      background: #006e2e; /* Old browsers */
+background: -moz-linear-gradient(top, #006e2e 0%, #006e2e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#006e2e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #006e2e 0%,#006e2e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #006e2e 0%,#006e2e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #006e2e 0%,#006e2e 100%); /* IE10+ */
+background: linear-gradient(to bottom, #006e2e 0%,#006e2e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=0 ); /* IE6-9 */
+      }
+
+      .navbar .nav .active > a, .navbar .nav .active > a:hover {
+         background-color: #006633;
+      }
+      
+      .navbar .nav > li > a {
+         color: #669966;
+         text-decoration: none;
+         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      .navbar-fixed-top .brand {
+        color: #F0F0F0;
+        text-decoration: none;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      .navbar .nav > li > a:hover {color:white;}
+
+      .navbar .nav .active > a, .navbar .nav .active > a:hover {color:white;}
+
+      /* All form factors */
+
+      /* Main body and headings */
+        body{
+         font-family: 'Roboto', sans-serif;
+      }
+      .heading, .subheading {
+         font-family: 'Oxygen', sans-serif;
+          text-align: center;
+      }
+      p.lead {
+         padding-top: 1.5%;
+         font-size: 24px;
+         line-height: 30px;
+      }
+      p {
+         font-size: 18px;
+         line-height: 24px;
+      }
+
+      /* Video pitch, Action and Rewards */
+        .pitch {
+          padding: 2.5% 0%;
+      }
+        .order {
+          padding: 2% 0%;
+      }
+        .actions {
+          background-color: #404040;
+          padding: 3% 0%;
+      }
+        .rewards {
+          background-color: #aaaaaa;
+          padding: 3% 0%; 
+      }
+        .video, .thermometer, .prizes, .order, .social, .statistics {
+          text-align: center;
+      }
+        .statistics h4, .statistics p {
+          color: white;
+      }
+
+        .heading h1 {
+          color: #006e2e;
+          font-size: 50px;
+      }
+
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+        text-align: center;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
+
+    </style>
+  </head>
+  <body>
+  <div class="navbar navbar-fixed-top">    
+   <div class="navbar-inner">
+    <div class="container">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Unpinned</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+	    <ul class="nav pull-right">
+	      <li class="dropdown">
+		<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In</a>
+		<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+		  <form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+  <input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" placeholder="Username"/>
+  <input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password"/>
+  <span class="help-block"><a href="#" class="text-error"><small>Forgot Password?</small></a></span>
+  <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
+  <label class="string optional" for="user_remember_me"> Remember me</label>
+
+  <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+  <a href="_account.html">Create an Account</a>
+</form>
+                </li>
+                </ul> 
+
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+      <div class="container">
+      <div class="row-fluid heading">
+	<div class="span12">
+	  <h1>Welcome to Unpinned!</h1>
+	  </div>
+	</div>
+	<div class="row-fluid subheading">
+	  <div class="span12">
+	    <p class="lead">An online community to learn, do and share DIY projects over vc.</p>
+	    </div>
+	  </div>
+	</div>
+      
+      <div class="container-fluid">
+	<div class="row-fluid pitch">
+	  <div class="span7 offset1">
+	    <div class="video">
+	    <img class="img-polaroid" src="http://placehold.it/600x400">
+	    </div>
+
+	   <div class="asset">
+            <img class="img-polaroid" src="http://placehold.it/600x200">
+	    </div>
+
+	    <div class="asset">
+	      <img class="img-polaroid" src="http://placehold.it/600x200">
+	      </div>
+	  </div>
+
+
+	  <div class="span3 actions">
+	    <div class="span12">
+	      <div class="statistics">
+		<div class="span10 offset1">
+		  <h4>Create a how-to-torial!</h4>
+		  <button class="btn btn-success btn-large">Create</button>
+		 </div>
+		 <div class="span10 offset1">
+                    <h4>Request a DIY Project</h4>
+                    <button class="btn btn-success btn-large">Request</button>
+                    </div>
+		  <div class="span10 offset1">
+                    <h4>Invite Friends</h4>
+                    </div>
+		  <div class="span12 social">
+              <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+              <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+              </div>
+		</div>
+	      </div>
+
+	  </div>
+
+	  <div class="span3 rewards">
+	    <div class="span12">
+	      <div class="prizes">
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge $1 or more</h4>
+		    <p>We'll thank you by name on our website</p>  
+		    </div>
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge a Social Plug</h4>
+		    <p>We give you a personal shout-out on our social networks</p>
+		    </div>
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge a Sign-Up</h4>
+		    <p>Be one of the first 100 to sign up and you'll be invited to the first 1,000 User Party</p>
+		    </div>   
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4> Pledge $5 or more</h4>
+		    <p> Reward</p>
+		    </div>
+		    </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge $10 or more</h4>
+		    <p>Reward xyz</p>
+		  </div>
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge $15 or more</h4>
+		    <p>Reward</p>
+		    </div>
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge $25 or more</h4>
+		    <p>A featured blog post on how wonderful you are</p>
+		    </div>
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge $50 or more</h4>
+		    <p>We'll make and mail you a personalized, handmade gift</p> 
+		    </div>
+		  </div>
+		<div class="span10 offset1">
+		  <div class="linediv-l">
+		    <h4>Pledge $100 or more</h4>
+		    <p>We'll name something on the site after you</p>
+		    </div>
+		  </div>
+		
+		</div>
+	      </div>
+	   </div> 
+
+
+
+	<div class="row-fluid faq">
+	  <div class="span10 offset1">
+	    <h3>FAQ</h3>
+	    <div class="accordion" id="accordion2">
+	      <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapseOne">
+		  Where will the business be based out of?
+		  </a>
+		</div>
+	      <div id="collapseOne" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Even though we're currently living in Sydney, the business will be incorporated in the US and eventually headquartered in whatever city we move back to.
+		  </div>
+		</div>
+	      </div>
+	      <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-togggle="collapse"
+		     data-parent="#accordion2" href="#collapseTwo">
+		    What's a Frequently Asked Question?
+		    </a>
+		  </div>
+	      <div id="collapseOne" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  A question which is commonly asked by users.
+	    </div>
+	</div>
+	</div>
+	</div>
+	</div>
+  
+	  </div>
+	</div>
+	<div class="row-fluid footer">
+	  <div class="span12">
+	    <p> This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+		By-SA 3.0
+		</a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
+	    </div>
+	    </div>
+	  </div>
+
+
+      </body>
+  </html>
+	     
+	     
