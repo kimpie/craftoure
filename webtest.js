@@ -1,7 +1,8 @@
+var express = require('express');
 var fs = require('fs');
 var htmlfile = "test.html";
-var express = require("express");
-var app = express();
+
+var app = express.createServer(express.logger());
 
 
 app.get('/', function(request, response) {
