@@ -364,7 +364,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		 </div>
 		 <div class="span10 offset1">
                     <h4>Request a DIY Project</h4>
-                    <button class="btn btn-success btn-large">Request</button>
+		    <!-- Button to trigger modal -->
+		    <a href="#myModal2" role="button" class="btn btn-success btn-large" data-toggle="modal">Request</a>
+
+		    <!-- Modal -->
+		    <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+		      <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			<h3 id="myModalLabel2">Request a how-to-torial</h3>
+			</div>
+		      <div class="modal-body modalCreate">
+			<p>Don't see what you're looking for?  Tell us!</p>
+			 <input class="input-xlarge" type="test" placeholder="Describe it for us...">
+		      </div>
+		      <div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			<button class="btn btn-primary">Send Request</button>
+			</div>
+		      </div>
+
                     </div>
 		  <div class="span10 offset1">
                     <h4>Invite Friends</h4>
