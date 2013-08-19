@@ -42,6 +42,18 @@
      }
 
       .navbar-inner, .navbar .btn-navbar {
+          background: #a9db80; /* Old browsers */
+background: -moz-linear-gradient(top, #a9db80 0%, #96c56f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9db80), color-stop(100%,#96c56f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a9db80 0%,#96c56f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a9db80 0%,#96c56f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #a9db80 0%,#96c56f 100%); /* IE10+ */
+background: linear-gradient(to bottom, #a9db80 0%,#96c56f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+      }
+
+
+      .fakenav{
       background: #006e2e; /* Old browsers */
 background: -moz-linear-gradient(top, #006e2e 0%, #006e2e 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#006e2e)); /* Chrome,Safari4+ */
@@ -77,6 +89,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
       /* Main body and headings */
         body{
          font-family: 'Roboto', sans-serif;
+         background: url('checkeredbackground.png');
       }
       .heading, .subheading {
          font-family: 'Oxygen', sans-serif;
@@ -119,6 +132,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
           margin: 5px;
 
       }
+
+        .btn-custom {
+          background-color: hsl(41, 85%, 35%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efb73d", endColorstr="#a5750d");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#efb73d), to(#a5750d));
+  background-image: -moz-linear-gradient(top, #efb73d, #a5750d);
+  background-image: -ms-linear-gradient(top, #efb73d, #a5750d);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efb73d), color-stop(100%, #a5750d));
+  background-image: -webkit-linear-gradient(top, #efb73d, #a5750d);
+  background-image: -o-linear-gradient(top, #efb73d, #a5750d);
+  background-image: linear-gradient(#efb73d, #a5750d);
+  border-color: #a5750d #a5750d hsl(41, 85%, 29%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.39);
+  -webkit-font-smoothing: antialiased;
+
+      }
+
+        .btn-custom-green {
+  background-color: hsl(110, 56%, 16%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#398f28", endColorstr="#193f11");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#398f28), to(#193f11));
+  background-image: -moz-linear-gradient(top, #398f28, #193f11);
+  background-image: -ms-linear-gradient(top, #398f28, #193f11);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #398f28), color-stop(100%, #193f11));
+  background-image: -webkit-linear-gradient(top, #398f28, #193f11);
+  background-image: -o-linear-gradient(top, #398f28, #193f11);
+  background-image: linear-gradient(#398f28, #193f11);
+  border-color: #193f11 #193f11 hsl(110, 56%, 11%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
 
         .rewards {
           background-color: #aaaaaa;
@@ -214,7 +263,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 	    </div>
 	  </div>
 	</div>
-      
+      <hr> </hr>
       <div class="container-fluid">
 	<div class="row-fluid pitch">
 	  <div class="span7 offset1">
@@ -238,7 +287,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		<div class="span12 actionsBtn">
 		  
 		  <!-- Button to trigger Modal -->
-		  <a href="#myModal1" role="button" class="btn btn-primary btn-block btnStats" data-toggle="modal">Create a to-torial</a>
+		  <a href="#myModal1" role="button" class="btn btn-primary btn-block btnStats btn-custom" data-toggle="modal">Create a to-torial</a>
 		  <!--Modal-->
 		  <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		    <div class="modal-header">
@@ -355,7 +404,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		  </div>
 		 <div class="span12 actionsBtn">
 		    <!-- Button to trigger modal -->
-		    <a href="#myModal2" role="button" class="btn btn-primary btn-block btnStats" data-toggle="modal">Request a to-torial</a>
+		    <a href="#myModal2" role="button" class="btn btn-primary btn-block btnStats btn-custom-green" data-toggle="modal">Request a to-torial</a>
 
 		    <!-- Modal -->
 		    <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
@@ -406,6 +455,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		</div>
 	      </div>
 	   </div> 
+       <hr>
+
 
        <div class="container-fluid">
 	 <div class="span6">
