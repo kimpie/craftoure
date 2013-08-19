@@ -12,13 +12,14 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
     <style type="text/css"> 
 
       /* Large desktop */
       @media (min-width: 980px) {
         body {
           padding-top: 60px;
-      }
+      }n
         .linediv-l {
           border-bottom: 1px white solid;
       }
@@ -104,7 +105,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
       }
         .actionsBtn {
           margin: 5px;
-}
+      }
+        .actionsPrompt {
+         font-family: 'Just Another Hand', cursive;
+         color: black;
+         margin: 5px;
+      }
+        .btnStats {
+          padding: 10px 18px;
+          font-size: 22px;
+          line-height: normal;
+          border-radius: 8px;
+          margin: 5px;
+      }
 
         .rewards {
           background-color: #aaaaaa;
@@ -113,7 +126,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
         .video, .thermometer, .prizes, .order, .social, .statistics {
           text-align: center;
       }
-        .statistics h4, .statistics p {
+        .statistics h4 {
           color: white;
       }
 
@@ -224,7 +237,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		<div class="span10 offset1 actionsBtn">
 
 		  <!-- Button to trigger Modal -->
-		  <a href="#myModal1" role="button" class="btn btn-success btn-large" data-toggle="modal">Create a to-torial</a>
+		  <a href="#myModal1" role="button" class="btn btn-success btnStats" data-toggle="modal">Create a to-torial</a>
 		  <!--Modal-->
 		  <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		    <div class="modal-header">
@@ -363,7 +376,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		      </div>
 
                     </div>
-		  <div class="span12 social actionsBtn">
+		 <div class="span10 offset1 actionsBtn">
+		   <p class="lead">Share it!</p>
+		   </div>
+		  <div class="span10 offset1 social">
 
 		    <!-- AddThis Button BEGIN -->
 		    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -377,7 +393,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', end
 		    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 		    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5200a667119977b7"></script>
 		    <!-- AddThis Button END -->
-		    
+
 
               </div>
 		</div>
