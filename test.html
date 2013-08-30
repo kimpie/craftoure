@@ -217,6 +217,9 @@ padding:0;
         .statistics h4 {
           color: white;
       }
+        .checkboxText {
+         text-align: left;
+      }
 
         .heading h1 {
           color: #a9db80;
@@ -228,6 +231,10 @@ padding:0;
         .modalCreate p {
           color: #006e2e;
       }
+        .my-size {
+         width: 150px;
+      }
+
 
       /* Marketing Copy and Footer */
       .copy {
@@ -335,15 +342,15 @@ padding:0;
 
 
 		      <!-- Create Form  First -->
-			  <div class="row-fluid">
+			  <div class="row-fluid no-space">
 				    <div class="span12">
 				      <div class="span8 offset2">
 				      <input class="input-xlarge" type="text" placeholder="Title">
 				    </div>
-				    <div class="span8 offset2">
+				    <div class="span12">
 				      <input class="input-xlarge" type="text" placeholder="Description">
 				    </div>
-				    <div class="span8 offset2">
+				    <div class="span12">
 				      <input class="input-xlarge" type="text" placeholder="Required Materials">
 				    </div>
 				  </div>
@@ -353,7 +360,7 @@ padding:0;
 		        <div class="span12">
 		          Pick the categories that best fit or create one:   
     		         </div>
-		        <div class="span12">
+		        <div class="span12 checkboxText">
 		          <div class="span4">
 		            <label class="checkbox">
 			     <input type="checkbox" value="">
@@ -450,11 +457,11 @@ padding:0;
 			<h3 id="myModalLabel2">Don't see what you're looking for?  Tell us!</h3>
 			</div>
 		      <div class="modal-body modalCreate">
-			<div class="span6 offset3"> 
+			<div class="span12"> 
 			<textarea rows=3 type="text" placeholder="Describe it for us..."></textarea>
 			</div>
-			<div class="span6 offset3">
-			 <input type="text" placeholder="Paste a link to the project">
+			<div class="span12">
+			 <input class="input-xlarge" type="text" placeholder="Paste a link to the project">
 			 </div>
 		      </div>
 		      <div class="modal-footer">
