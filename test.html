@@ -107,7 +107,7 @@ padding:0;
       .heading {
          font-family: 'Oxygen', sans-serif;
          text-align: center;
-         padding-top: 20px;
+         padding-top: 30px;
          margin: 0px;
       
       }
@@ -131,6 +131,10 @@ padding:0;
       }
 
       /* Video pitch, Action and Rewards */
+        .no-space [class*="span"] {
+        margin-left: 0; 
+      }
+
         .pitch {
           padding: 2.5% 0%;
       }
@@ -143,6 +147,7 @@ padding:0;
       }
         .actionsBtn {
           margin: 5px;
+          
       }
         .actionsPrompt {
          font-family: 'Just Another Hand', cursive;
@@ -302,7 +307,7 @@ padding:0;
 	</div>
 
       <div class="container-fluid">
-	<div class="row-fluid pitch">
+	<div class="row-fluid pitch no-space">
 	  <div class="span7 offset1">
 	    <div class="video">
 	    <img class="img-polaroid" src="http://placehold.it/600x400">
@@ -316,6 +321,7 @@ padding:0;
 	    <div class="span12 statistics">
 
 		<div class="span12 actionsBtn">
+
 		  
 		  <!-- Button to trigger Modal -->
 		  <a href="#myModal1" role="button" class="btn btn-primary btn-block btnStats" data-toggle="modal">Create a to-torial</a>
@@ -458,7 +464,7 @@ padding:0;
 		      </div>
 
                     </div>
-		 <div class="span10 offset1 actionsBtn">
+		 <div class="span10 offset1 actionsBtn actionsPrompt">
 		   <p class="lead">Share it!</p>
 		   </div>
 		  <div class="span12 social">
@@ -483,7 +489,7 @@ padding:0;
 
 	  </div>
 
-		</div>
+	         </div>
 	      </div>
 	   </div> 
        <hr>
