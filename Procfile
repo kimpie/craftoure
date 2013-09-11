@@ -1,1 +1,1 @@
-web: node websignup.js
+web: node webcraftoure.js
